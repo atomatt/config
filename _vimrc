@@ -45,21 +45,18 @@ set wildmode=full " <Tab> cycles between all matching choices.
 set wildignore+=*.o,*.obj,.git,*.pyc
 
 " Display tabs with :set list & displays when a line runs off-screen
-set listchars=tab:>-,eol:¬,trail:-,precedes:<,extends:>
-set list
+" set listchars=tab:>-,eol:¬,trail:-,precedes:<,extends:>
+" set list
 
 
 "
 " File type configuration
 "
 
-" HTML et al
-autocmd FileType xml,xhtml,html,css \
-    setlocal smartindent shiftwidth=2 softtabstop=2 tabstop=2
+au BufRead,BufNewFile *.json setlocal filetype=json
 
-" Javascript/JSON
-autocmd FileType js,json \
-    setlocal smartindent shiftwidth=2 softtabstop=2 tabstop=2
+" HTML, JavaScript, CSS et al
+autocmd FileType xml,xhtml,html,css,javascript,json setlocal smartindent shiftwidth=2 softtabstop=2 tabstop=2
 
 " Python
 au FileType python setlocal autoindent smartindent softtabstop=4 shiftwidth=4 tabstop=4
