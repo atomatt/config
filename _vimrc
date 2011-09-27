@@ -13,7 +13,7 @@ filetype on " try to detect filetypes
 filetype plugin indent on " enable loading indent file for filetype
 
 " Colours
-set background=dark
+set background=light
 
 " Indentation
 set autoindent " always set autoindenting on
@@ -66,6 +66,9 @@ au FileType python inoremap # X#
 "
 " Plugin configuration.
 "
+
+" pyflakes
+highlight PyFlakes ctermbg=grey
 
 " pep8
 let g:pep8_map='<leader>8'
