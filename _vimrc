@@ -56,7 +56,7 @@ set wildignore+=*.o,*.obj,.git,*.pyc
 au BufRead,BufNewFile *.json setlocal filetype=json
 
 " HTML, JavaScript, CSS et al
-autocmd FileType xml,xhtml,html,css,javascript,json setlocal smartindent shiftwidth=2 softtabstop=2 tabstop=2
+" autocmd FileType xml,xhtml,html,css,javascript,json setlocal smartindent shiftwidth=2 softtabstop=2 tabstop=2
 
 " Python
 au FileType python setlocal autoindent smartindent softtabstop=4 shiftwidth=4 tabstop=4
