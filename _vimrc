@@ -62,6 +62,9 @@ autocmd FileType xml,xhtml,html,css,javascript,json setlocal smartindent shiftwi
 au FileType python setlocal autoindent smartindent softtabstop=4 shiftwidth=4 tabstop=4
 au FileType python inoremap # X#
 
+" Go
+au FileType go setlocal noexpandtab
+
 
 "
 " Plugin configuration.
