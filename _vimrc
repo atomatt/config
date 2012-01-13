@@ -71,7 +71,7 @@ au FileType go setlocal noexpandtab
 "
 
 " pyflakes
-highlight PyFlakes ctermbg=grey
+highlight PyFlakes ctermbg=Gray
 
 " pep8
 let g:pep8_map='<leader>8'
