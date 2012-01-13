@@ -14,6 +14,7 @@ filetype plugin indent on " enable loading indent file for filetype
 
 " Colours
 set background=light
+hi SpecialKey ctermfg=Gray
 
 " Indentation
 set autoindent " always set autoindenting on
@@ -45,8 +46,8 @@ set wildmode=full " <Tab> cycles between all matching choices.
 set wildignore+=*.o,*.obj,.git,*.pyc
 
 " Display tabs with :set list & displays when a line runs off-screen
-" set listchars=tab:>-,eol:¬,trail:-,precedes:<,extends:>
-" set list
+set listchars=tab:¦·,trail:·
+set list
 
 
 "
