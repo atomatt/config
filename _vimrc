@@ -10,6 +10,7 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 Bundle 'The-NERD-tree'
 Bundle 'gnupg'
+Bundle 'https://github.com/Lokaltog/vim-powerline.git'
 Bundle 'indentpython'
 Bundle 'pep8'
 Bundle 'pyflakes'
