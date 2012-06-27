@@ -1,4 +1,5 @@
 " General setup
+set t_Co=256 " terminal supports 256 colors
 set modelines=0 " disable security holes
 set nocompatible " not compatiable with vi
 set encoding=utf-8
