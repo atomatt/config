@@ -11,10 +11,6 @@ function link_file {
     ln -sf ${source} ${target}
 }
 
-# Latest pathogen
-mkdir -p _vim/autoload
-wget -O - https://raw.github.com/tpope/vim-pathogen/HEAD/autoload/pathogen.vim > _vim/autoload/pathogen.vim
-
 if [ "$1" = "vim" ]; then
 for i in _vim*
     do
