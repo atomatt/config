@@ -3,9 +3,16 @@ set modelines=0 " disable security holes
 set nocompatible " not compatiable with vi
 set encoding=utf-8
 
-" Load pathogen
-call pathogen#infect()
-call pathogen#helptags()
+" Load Vundle
+filetype off
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+Bundle 'The-NERD-tree'
+Bundle 'gnupg'
+Bundle 'indentpython'
+Bundle 'pep8'
+Bundle 'pyflakes'
+Bundle 'https://github.com/jnwhiteh/vim-golang.git'
 
 " Basic settings
 syntax on " syntax highlighing
