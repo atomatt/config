@@ -55,6 +55,7 @@ set list
 "
 
 au BufRead,BufNewFile *.json setlocal filetype=json
+au BufRead,BufNewFile *.mustache setlocal filetype=html
 
 " HTML, JavaScript, CSS et al
 " autocmd FileType xml,xhtml,html,css,javascript,json setlocal smartindent shiftwidth=2 softtabstop=2 tabstop=2
