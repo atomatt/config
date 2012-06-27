@@ -20,8 +20,13 @@ filetype on " try to detect filetypes
 filetype plugin indent on " enable loading indent file for filetype
 
 " Colours
-set background=light
-hi SpecialKey ctermfg=Gray
+if has('gui_running')
+    set background=light
+    hi SpecialKey ctermfg=Gray
+else
+    set background=dark
+    hi SpecialKey ctermfg=DarkGray
+endif
 
 " Indentation
 set autoindent " always set autoindenting on
