@@ -1,0 +1,36 @@
+snippet html
+	<!doctype html>
+	<html lang="en">
+		<head>
+			<meta charset="utf-8" />
+			<title>${1:title}</title>
+		</head>
+		<body>
+			<div class="container">${2}
+			</div>
+		</body>
+	</html>
+snippet link
+	<link rel="${1:stylesheet}" href="${2}" />${3}
+snippet style
+	<style>
+		${1}
+	</style>
+snippet script
+	<script src="${1"}></script>${2}
+snippet scripti
+	<script>
+		${1}
+	</script>
+snippet div
+	<div class="${1}"}>
+		${2}
+	</div>
+snippet row
+	<div class="row">
+		${1}
+	</div>
+snippet col
+	<div class="span${1}">
+		${2}
+	</div>

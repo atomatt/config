@@ -15,6 +15,9 @@ Bundle 'pep8'
 Bundle 'pyflakes'
 Bundle 'https://github.com/jnwhiteh/vim-golang.git'
 Bundle 'https://github.com/hynek/vim-python-pep8-indent.git'
+Bundle 'https://github.com/msanders/snipmate.vim'
+
+let g:snippets_dir="~/.vim/snippets"
 
 " Basic settings
 syntax on " syntax highlighing
