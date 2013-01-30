@@ -11,10 +11,10 @@ call vundle#rc()
 Bundle 'The-NERD-tree'
 Bundle 'gnupg'
 Bundle 'https://github.com/Lokaltog/vim-powerline.git'
-Bundle 'indentpython'
 Bundle 'pep8'
 Bundle 'pyflakes'
 Bundle 'https://github.com/jnwhiteh/vim-golang.git'
+Bundle 'https://github.com/hynek/vim-python-pep8-indent.git'
 
 " Basic settings
 syntax on " syntax highlighing
@@ -75,7 +75,7 @@ au BufRead,BufNewFile *.mustache setlocal filetype=html
 " autocmd FileType xml,xhtml,html,css,javascript,json setlocal smartindent shiftwidth=2 softtabstop=2 tabstop=2
 
 " Python
-au FileType python setlocal autoindent smartindent softtabstop=4 shiftwidth=4 tabstop=4
+au FileType python setlocal autoindent smartindent smarttab softtabstop=4 shiftwidth=4 tabstop=4
 au FileType python inoremap # X#
 
 " Go
