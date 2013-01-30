@@ -82,7 +82,7 @@ au FileType python setlocal autoindent smartindent smarttab softtabstop=4 shiftw
 au FileType python inoremap # X#
 
 " Go
-au FileType go setlocal noexpandtab
+au FileType go setlocal noexpandtab list!
 
 
 "
