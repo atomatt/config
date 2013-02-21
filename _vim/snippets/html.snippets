@@ -23,14 +23,48 @@ snippet scripti
 		${1}
 	</script>
 snippet div
-	<div class="${1}"}>
+	<div class="${1}">
 		${2}
 	</div>
-snippet row
+snippet input
+	<input type="${1:text}" name="${2}" value="${3}" />
+snippet textarea
+	<textarea name="${1}" cols="${2}" rows="${3}"></textarea>
+snippet h1
+	<h1>${1:heading}</h1>${2}
+snippet h2
+	<h2>${1:heading}</h2>${2}
+snippet h3
+	<h3>${1:heading}</h3>${2}
+snippet h4
+	<h4>${1:heading}</h4>${2}
+snippet h5
+	<h5>${1:heading}</h5>${2}
+snippet h6
+	<h6>${1:heading}</h6>${2}
+snippet p
+	<p>${1}</p>
+snippet jq:js
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+snippet bs:css
+	<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.0/css/bootstrap-combined.min.css" rel="stylesheet">
+snippet bs:navbar
+	<div class="navbar navbar-static-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<a class="brand" href="/">${1:Title}</a>
+				<ul class="nav">
+					<li><a href="/">Home</a></li>
+					<li><a href="#">Link</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>${2}
+snippet bs:row
 	<div class="row">
 		${1}
 	</div>
-snippet col
+snippet bs:col
 	<div class="span${1}">
 		${2}
 	</div>
