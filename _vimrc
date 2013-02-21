@@ -66,6 +66,9 @@ set wildignore+=*.o,*.obj,.git,*.pyc
 set listchars=tab:¦·,trail:·
 set list
 
+" Wrapping ... ugh!
+set nowrap
+
 
 "
 " File type configuration
