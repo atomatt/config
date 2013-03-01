@@ -14,6 +14,7 @@ Bundle 'pep8'
 Bundle 'pyflakes'
 Bundle 'https://github.com/jnwhiteh/vim-golang.git'
 Bundle 'https://github.com/hynek/vim-python-pep8-indent.git'
+Bundle 'https://github.com/nanotech/jellybeans.vim'
 Bundle 'https://github.com/SirVer/ultisnips'
 
 let g:UltiSnipsExpandTrigger="<tab>"
@@ -26,13 +27,8 @@ filetype on " try to detect filetypes
 filetype plugin indent on " enable loading indent file for filetype
 
 " Colours
-if has('gui_running')
-    set background=light
-    hi SpecialKey ctermfg=Gray
-else
-    set background=dark
-    hi SpecialKey ctermfg=DarkGray
-endif
+colorscheme jellybeans
+hi SpecialKey ctermfg=DarkGray
 
 " Indentation
 set autoindent " always set autoindenting on
