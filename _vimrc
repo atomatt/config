@@ -14,9 +14,11 @@ Bundle 'pep8'
 Bundle 'pyflakes'
 Bundle 'https://github.com/jnwhiteh/vim-golang.git'
 Bundle 'https://github.com/hynek/vim-python-pep8-indent.git'
-Bundle 'https://github.com/msanders/snipmate.vim'
+Bundle 'https://github.com/SirVer/ultisnips'
 
-let g:snippets_dir="~/.vim/snippets"
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:UltiSnipsSnippetDirectories=["snippets"]
 
 " Basic settings
 syntax on " syntax highlighing

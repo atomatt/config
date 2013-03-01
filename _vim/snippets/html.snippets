@@ -1,70 +1,108 @@
 snippet html
-	<!doctype html>
-	<html lang="en">
-		<head>
-			<meta charset="utf-8" />
-			<title>${1:title}</title>
-		</head>
-		<body>
-			<div class="container">${2}
-			</div>
-		</body>
-	</html>
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>${1:title}</title>
+    </head>
+    <body>
+        <div class="container">${0}
+        </div>
+    </body>
+</html>
+endsnippet
+
 snippet link
-	<link rel="${1:stylesheet}" href="${2}" />${3}
+<link rel="${1:stylesheet}" href="${2}" />${0}
+endsnippet
+
 snippet style
-	<style>
-		${1}
-	</style>
+<style>
+    ${0}
+</style>
+endsnippet
+
 snippet script
-	<script src="${1}"></script>${2}
+<script src="${1}"></script>${0}
+endsnippet
+
 snippet scripti
-	<script>
-		${1}
-	</script>
+<script>
+    ${0}
+</script>
+endsnippet
+
 snippet div
-	<div class="${1}">
-		${2}
-	</div>
+<div class="${1}">
+    ${0}
+</div>
+endsnippet
+
 snippet input
-	<input type="${1:text}" name="${2}" value="${3}" />
+<input type="${1:text}" name="${2}" value="${3}" />${0}
+endsnippet
+
 snippet textarea
-	<textarea name="${1}" cols="${2}" rows="${3}"></textarea>
+<textarea name="${1}" cols="${2}" rows="${3}"></textarea>${0}
+endsnippet
+
 snippet h1
-	<h1>${1:heading}</h1>${2}
+<h1>${1:heading}</h1>${0}
+endsnippet
+
 snippet h2
-	<h2>${1:heading}</h2>${2}
+<h2>${1:heading}</h2>${0}
+endsnippet
+
 snippet h3
-	<h3>${1:heading}</h3>${2}
+<h3>${1:heading}</h3>${0}
+endsnippet
+
 snippet h4
-	<h4>${1:heading}</h4>${2}
+<h4>${1:heading}</h4>${0}
+endsnippet
+
 snippet h5
-	<h5>${1:heading}</h5>${2}
+<h5>${1:heading}</h5>${0}
+endsnippet
+
 snippet h6
-	<h6>${1:heading}</h6>${2}
+<h6>${1:heading}</h6>${0}
+endsnippet
+
 snippet p
-	<p>${1}</p>
+<p>${0}</p>
+endsnippet
+
 snippet jq:js
-	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+endsnippet
+
 snippet bs:css
-	<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.0/css/bootstrap-combined.min.css" rel="stylesheet">
+<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.0/css/bootstrap-combined.min.css" rel="stylesheet">
+endsnippet
+
 snippet bs:navbar
-	<div class="navbar navbar-static-top">
-		<div class="navbar-inner">
-			<div class="container">
-				<a class="brand" href="/">${1:Title}</a>
-				<ul class="nav">
-					<li><a href="/">Home</a></li>
-					<li><a href="#">Link</a></li>
-				</ul>
-			</div>
-		</div>
-	</div>${2}
+<div class="navbar navbar-static-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <a class="brand" href="/">${1:Title}</a>
+            <ul class="nav">
+                <li><a href="/">Home</a></li>${0}
+            </ul>
+        </div>
+    </div>
+</div>
+endsnippet
+
 snippet bs:row
-	<div class="row">
-		${1}
-	</div>
+<div class="row">
+    ${0}
+</div>
+endsnippet
+
 snippet bs:col
-	<div class="span${1}">
-		${2}
-	</div>
+<div class="span${1}">
+    ${0}
+</div>
+endsnippet
