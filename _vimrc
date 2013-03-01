@@ -8,7 +8,6 @@ set encoding=utf-8
 filetype off
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
-Bundle 'The-NERD-tree'
 Bundle 'gnupg'
 Bundle 'https://github.com/Lokaltog/vim-powerline.git'
 Bundle 'pep8'
@@ -97,6 +96,3 @@ highlight PyFlakes ctermbg=Gray
 
 " pep8
 let g:pep8_map='<leader>8'
-
-" NerdTree
-map <leader>n :NERDTreeToggle<CR>
