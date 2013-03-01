@@ -1,4 +1,4 @@
-snippet html
+snippet html "Basic HTML document" b
 <!doctype html>
 <html lang="en">
     <head>
@@ -12,27 +12,27 @@ snippet html
 </html>
 endsnippet
 
-snippet link
+snippet link "Link tag" b
 <link rel="${1:stylesheet}" href="${2}" />${0}
 endsnippet
 
-snippet style
+snippet style "Style tag" b
 <style>
     ${0}
 </style>
 endsnippet
 
-snippet script
+snippet script "Script tag" b
 <script src="${1}"></script>${0}
 endsnippet
 
-snippet scripti
+snippet scripti "Inline script tag" b
 <script>
     ${0}
 </script>
 endsnippet
 
-snippet div
+snippet div "div with a class" b
 <div class="${1}">
     ${0}
 </div>
@@ -46,43 +46,23 @@ snippet textarea
 <textarea name="${1}" cols="${2}" rows="${3}"></textarea>${0}
 endsnippet
 
-snippet h1
-<h1>${1:heading}</h1>${0}
+snippet h "Heading element" b
+<h${1:1}>$0</h$1>
 endsnippet
 
-snippet h2
-<h2>${1:heading}</h2>${0}
-endsnippet
-
-snippet h3
-<h3>${1:heading}</h3>${0}
-endsnippet
-
-snippet h4
-<h4>${1:heading}</h4>${0}
-endsnippet
-
-snippet h5
-<h5>${1:heading}</h5>${0}
-endsnippet
-
-snippet h6
-<h6>${1:heading}</h6>${0}
-endsnippet
-
-snippet p
+snippet p "Paragraph" b
 <p>${0}</p>
 endsnippet
 
-snippet jq:js
+snippet jq:js "jQuery include" b
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 endsnippet
 
-snippet bs:css
+snippet bs:css "Bootstrap CSS include" b
 <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.0/css/bootstrap-combined.min.css" rel="stylesheet">
 endsnippet
 
-snippet bs:navbar
+snippet bs:navbar "Bootstrap navbar" b
 <div class="navbar navbar-static-top">
     <div class="navbar-inner">
         <div class="container">
@@ -95,13 +75,13 @@ snippet bs:navbar
 </div>
 endsnippet
 
-snippet bs:row
+snippet bs:row "Bootstrap grid row" b
 <div class="row">
     ${0}
 </div>
 endsnippet
 
-snippet bs:col
+snippet bs:col "Bootstrap grid col" b
 <div class="span${1}">
     ${0}
 </div>
