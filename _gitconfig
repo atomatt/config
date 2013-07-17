@@ -1,6 +1,8 @@
 [user]
 	name = Matt Goodall
 	email = matt.goodall@gmail.com
+[alias]
+    lol = log --graph --decorate --pretty=oneline --abbrev-commit
 [color]
 	ui = true
 [push]
