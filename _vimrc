@@ -82,6 +82,9 @@ au FileType python inoremap # X#
 au FileType go setlocal noexpandtab list!
 au FileType go au BufWritePre <buffer> Fmt
 
+" Markdown
+au BufRead,BufNewFile *.md set filetype=markdown
+
 
 "
 " Plugin configuration.
