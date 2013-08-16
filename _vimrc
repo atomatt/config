@@ -80,6 +80,7 @@ au FileType python inoremap # X#
 
 " Go
 au FileType go setlocal noexpandtab list!
+au FileType go au BufWritePre <buffer> Fmt
 
 
 "
