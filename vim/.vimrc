@@ -8,6 +8,7 @@ set encoding=utf-8
 filetype off
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
+Bundle 'gmarik/vundle'
 Bundle 'gnupg'
 Bundle 'https://github.com/Lokaltog/vim-powerline.git'
 Bundle 'https://github.com/jnwhiteh/vim-golang.git'
