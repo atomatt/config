@@ -72,19 +72,27 @@ snippet jq:js2 "jQuery include" b
 endsnippet
 
 snippet bs:css "Bootstrap CSS include" b
-<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" />
 endsnippet
 
 snippet bs:js "Bootstrap JS include" b
-<script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 endsnippet
 
 snippet bs:navbar "Bootstrap navbar" b
-<div class="navbar navbar-static-top">
-    <div class="navbar-inner">
-        <div class="container">
-            <a class="brand" href="/">${1:Title}</a>
-            <ul class="nav">
+<div class="navbar navbar-static-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">${1:Title}</a>
+        </div>
+        <div class="collapse navbar-collapse navbar-responsive-collapse">
+            <ul class="nav navbar-nav">
                 <li><a href="/">Home</a></li>${0}
             </ul>
         </div>
@@ -99,7 +107,7 @@ snippet bs:row "Bootstrap grid row" b
 endsnippet
 
 snippet bs:col "Bootstrap grid col" b
-<div class="span${1}">
+<div class="col-${1:md}-${2}">
     ${0}
 </div>
 endsnippet
