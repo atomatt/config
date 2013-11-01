@@ -24,13 +24,7 @@ snippet style "Style tag" b
 endsnippet
 
 snippet script "Script tag" b
-<script src="${1}"></script>${0}
-endsnippet
-
-snippet scripti "Inline script tag" b
-<script>
-    ${0}
-</script>
+<script${1: src="${2}"}>${0}</script>
 endsnippet
 
 snippet div "div with a class" b
