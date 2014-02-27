@@ -14,6 +14,8 @@ Bundle 'https://github.com/Lokaltog/vim-powerline.git'
 Bundle 'https://github.com/jnwhiteh/vim-golang.git'
 Bundle 'https://github.com/hynek/vim-python-pep8-indent.git'
 Bundle 'https://github.com/SirVer/ultisnips'
+Bundle 'https://github.com/mustache/vim-mustache-handlebars.git'
+Bundle 'https://github.com/kien/ctrlp.vim.git'
 
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
