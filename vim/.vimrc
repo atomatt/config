@@ -18,7 +18,7 @@ Bundle 'https://github.com/kien/ctrlp.vim.git'
 
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
-let g:UltiSnipsSnippetDirectories=["snippets"]
+let g:UltiSnipsSnippetDirectories=["my-snippets"]
 
 let g:ctrlp_custom_ignore = '\v[\/](tmp|cache|\.egg-info)$'
 
