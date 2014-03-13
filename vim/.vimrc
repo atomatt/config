@@ -16,10 +16,12 @@ Bundle 'https://github.com/SirVer/ultisnips'
 Bundle 'https://github.com/mustache/vim-mustache-handlebars.git'
 Bundle 'https://github.com/kien/ctrlp.vim.git'
 
+" Snippets config.
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsSnippetDirectories=["my-snippets"]
 
+" ctrlp file expansion
 let g:ctrlp_custom_ignore = '\v[\/](tmp|cache|\.egg-info|node_modules)$'
 
 " Basic settings
