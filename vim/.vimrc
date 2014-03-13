@@ -21,6 +21,8 @@ let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsSnippetDirectories=["snippets"]
 
+let g:ctrlp_custom_ignore = '\v[\/](tmp|cache|\.egg-info)$'
+
 " Basic settings
 syntax on " syntax highlighing
 filetype on " try to detect filetypes
