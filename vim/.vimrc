@@ -10,7 +10,6 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 Bundle 'gmarik/vundle'
 Bundle 'gnupg'
-Bundle 'https://github.com/Lokaltog/vim-powerline.git'
 Bundle 'https://github.com/jnwhiteh/vim-golang.git'
 Bundle 'https://github.com/hynek/vim-python-pep8-indent.git'
 Bundle 'https://github.com/SirVer/ultisnips'
@@ -89,14 +88,3 @@ au FileType go au BufWritePre <buffer> Fmt
 
 " Markdown
 au BufRead,BufNewFile *.md set filetype=markdown
-
-
-"
-" Plugin configuration.
-"
-
-" pyflakes
-highlight PyFlakes ctermbg=Gray
-
-" pep8
-let g:pep8_map='<leader>8'
