@@ -8,13 +8,14 @@ set encoding=utf-8
 filetype off
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
-Bundle 'gmarik/vundle'
-Bundle 'gnupg'
-Bundle 'https://github.com/jnwhiteh/vim-golang.git'
-Bundle 'https://github.com/hynek/vim-python-pep8-indent.git'
-Bundle 'https://github.com/SirVer/ultisnips'
-Bundle 'https://github.com/mustache/vim-mustache-handlebars.git'
-Bundle 'https://github.com/kien/ctrlp.vim.git'
+Plugin 'gmarik/vundle'
+Plugin 'tpope/vim-sensible'
+Plugin 'jamessan/vim-gnupg'
+Plugin 'jnwhiteh/vim-golang'
+Plugin 'hynek/vim-python-pep8-indent'
+Plugin 'SirVer/ultisnips'
+Plugin 'mustache/vim-mustache-handlebars'
+Plugin 'kien/ctrlp.vim'
 
 " Snippets config.
 let g:UltiSnipsExpandTrigger="<tab>"
@@ -30,7 +31,7 @@ filetype on " try to detect filetypes
 filetype plugin indent on " enable loading indent file for filetype
 
 " Colours
-"hi SpecialKey ctermfg=DarkGray
+hi SpecialKey ctermfg=LightGray
 set background=light
 
 " Indentation
@@ -73,9 +74,9 @@ set nowrap
 "
 " File type configuration
 "
-
 au BufRead,BufNewFile *.json setlocal filetype=json
 au BufRead,BufNewFile *.mustache setlocal filetype=html
+au BufRead,BufNewFile *.md set filetype=markdown
 
 " HTML, JavaScript, CSS et al
 " autocmd FileType xml,xhtml,html,css,javascript,json setlocal smartindent shiftwidth=2 softtabstop=2 tabstop=2
@@ -85,8 +86,5 @@ au FileType python setlocal autoindent smartindent smarttab softtabstop=4 shiftw
 au FileType python inoremap # X#
 
 " Go
-au FileType go setlocal noexpandtab list!
+au FileType go setlocal noexpandtab
 au FileType go au BufWritePre <buffer> Fmt
-
-" Markdown
-au BufRead,BufNewFile *.md set filetype=markdown
