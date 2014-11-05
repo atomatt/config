@@ -23,7 +23,7 @@ let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsSnippetDirectories=["my-snippets"]
 
 " ctrlp file expansion
-let g:ctrlp_custom_ignore = '\v[\/](tmp|cache|\.egg-info|node_modules|bower_components)$'
+let g:ctrlp_custom_ignore = '\v[\/](tmp|cache|\.egg-info|node_modules|bower_components|dist|build)$'
 
 " Basic settings
 syntax on " syntax highlighing
