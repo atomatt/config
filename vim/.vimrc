@@ -88,3 +88,6 @@ au FileType python inoremap # X#
 " Go
 au FileType go setlocal noexpandtab
 au FileType go au BufWritePre <buffer> Fmt
+
+" YAML
+au FileType yaml setlocal autoindent smartindent smarttab softtabstop=2 shiftwidth=2 tabstop=2
