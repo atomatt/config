@@ -10,3 +10,14 @@ snippet xxx "Important comment" b
 // XXX($1): $0
 endsnippet
 
+snippet reactClass "react class" b
+var $1 = React.createClass({
+  render: function() {
+  return (
+    <div className="$1">
+      $1
+    </div>
+  );
+  }
+});
+endsnippet

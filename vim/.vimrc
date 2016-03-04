@@ -10,11 +10,9 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 Plugin 'gmarik/vundle'
 Plugin 'tpope/vim-sensible'
-Plugin 'jamessan/vim-gnupg'
-Plugin 'jnwhiteh/vim-golang'
+Plugin 'fatih/vim-go'
 Plugin 'hynek/vim-python-pep8-indent'
 Plugin 'SirVer/ultisnips'
-Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'kien/ctrlp.vim'
 
 " Snippets config.
@@ -23,7 +21,7 @@ let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsSnippetDirectories=["my-snippets"]
 
 " ctrlp file expansion
-let g:ctrlp_custom_ignore = '\v[\/](tmp|cache|\.egg-info|node_modules|bower_components|dist|build)$'
+let g:ctrlp_custom_ignore = '\v[\/](tmp|cache|\.egg-info|node_modules|bower_components|dist|build|\.bzr|\.git|bin|pkg|vendor)$'
 
 " Basic settings
 syntax on " syntax highlighing
@@ -64,8 +62,8 @@ set wildmode=full " <Tab> cycles between all matching choices.
 set wildignore+=*.o,*.obj,.git,*.pyc
 
 " Display tabs with :set list & displays when a line runs off-screen
-set listchars=tab:¦·,trail:·
-set list
+"set listchars=tab:¦·,trail:·
+"set list
 
 " Wrapping ... ugh!
 set nowrap
@@ -79,15 +77,14 @@ au BufRead,BufNewFile *.mustache setlocal filetype=html
 au BufRead,BufNewFile *.md set filetype=markdown
 
 " HTML, JavaScript, CSS et al
-" autocmd FileType xml,xhtml,html,css,javascript,json setlocal smartindent shiftwidth=2 softtabstop=2 tabstop=2
+autocmd FileType xml,xhtml,html,css,javascript,json setlocal smartindent shiftwidth=2 softtabstop=2 tabstop=2
 
 " Python
 au FileType python setlocal autoindent smartindent smarttab softtabstop=4 shiftwidth=4 tabstop=4
 au FileType python inoremap # X#
 
 " Go
-au FileType go setlocal noexpandtab
-au FileType go au BufWritePre <buffer> Fmt
+let g:go_fmt_command ="goimports"
 
 " YAML
 au FileType yaml setlocal autoindent smartindent smarttab softtabstop=2 shiftwidth=2 tabstop=2
