@@ -28,7 +28,6 @@ call plug#end()
 " Nice colours
 colorscheme lucius
 LuciusDark
-LuciusWhiteHighContrast
 
 " easy access to useful things
 let g:mapleader = ","
@@ -51,7 +50,7 @@ set expandtab
 autocmd Filetype css,scss setlocal expandtab tabstop=2 shiftwidth=2
 autocmd Filetype html setlocal expandtab tabstop=2 shiftwidth=2
 autocmd Filetype javascript setlocal expandtab tabstop=2 shiftwidth=2
-autocmd Filetype json setlocal expandtab tabstop=2 shiftwidth=2
+autocmd Filetype json,jsonnet setlocal expandtab tabstop=2 shiftwidth=2
 autocmd Filetype ruby setlocal expandtab tabstop=2 shiftwidth=2
 
 " sensible splitting
