@@ -3,6 +3,8 @@
 	email = matt.goodall@gmail.com
 [alias]
     lol = log --graph --decorate --pretty=oneline --abbrev-commit
+    ulog = log @{u}...
+    udiff = diff @{u}...
 [color]
 	ui = true
 [push]
