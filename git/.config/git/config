@@ -10,5 +10,5 @@
 [push]
 	default = current
 [core]
-	excludesfile = /home/matt/.gitignore
+	excludesfile = /home/matt/.config/git/ignore
 	autocrlf = input
