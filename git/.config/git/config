@@ -17,3 +17,6 @@
 [core]
 	excludesfile = /home/matt/.config/git/ignore
 	autocrlf = input
+
+[rerere]
+	enabled = true
