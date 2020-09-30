@@ -4,8 +4,9 @@
 
 [alias]
 	lol = log --graph --decorate --pretty=oneline --abbrev-commit
-	ulog = log @{u}...
+	ucheckout = checkout @{u}
 	udiff = diff @{u}...
+	ulog = log @{u}...
 
 [color]
 	ui = true
