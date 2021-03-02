@@ -41,3 +41,7 @@ set splitright
 
 " no-one likes their code wrapped, right?
 set nowrap
+
+" go plugin
+let g:go_fmt_command = "goimports"
+let g:go_fmt_fail_silently = 1
