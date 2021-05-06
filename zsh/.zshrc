@@ -7,6 +7,7 @@ antigen use oh-my-zsh
 antigen bundle git
 antigen bundle command-not-found
 antigen bundle kubectl
+antigen bundle nix-shell
 
 # Syntax highlighting bundle.
 antigen bundle zsh-users/zsh-syntax-highlighting
