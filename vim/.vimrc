@@ -31,7 +31,7 @@ set shiftwidth=4
 set expandtab
 autocmd Filetype css,scss setlocal expandtab tabstop=2 shiftwidth=2
 autocmd Filetype html setlocal expandtab tabstop=2 shiftwidth=2
-autocmd Filetype javascript setlocal expandtab tabstop=2 shiftwidth=2
+autocmd Filetype javascript,javascriptreact setlocal expandtab tabstop=2 shiftwidth=2
 autocmd Filetype json,jsonnet setlocal expandtab tabstop=2 shiftwidth=2
 autocmd Filetype ruby setlocal expandtab tabstop=2 shiftwidth=2
 
